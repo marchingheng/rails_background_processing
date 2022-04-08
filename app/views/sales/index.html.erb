@@ -1,0 +1,22 @@
+<style>
+
+</style>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<div id="wrapper">
+
+  <h1>Create A Sales Report</h1>
+
+  <button class="generate-sales-report">
+    GENERATE SALES REPORT
+  </button>
+
+  <div id="footer-javascripts">
+    <script type="text/javascript">
+      $("button.generate-sales-report").on("click", function() {
+        window.location = "<%= sales_report_url %>"
+      })
+    </script>
+  </div>
+
+</div>

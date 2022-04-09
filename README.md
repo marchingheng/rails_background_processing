@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+These are the commands you need to run to make this work in development environment:
 
-Things you may want to cover:
+* Start rails server on port 3003
+rails s -p 3003
 
-* Ruby version
+* Turn on redis server(queue)
+redis-server
 
-* System dependencies
+* You can interact with redis in command line if you want
+redis-cli
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Turn on sidekiq worker node with 1 thread
+sidekiq -c 1
